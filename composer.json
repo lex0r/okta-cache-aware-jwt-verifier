@@ -1,0 +1,28 @@
+{
+    "name": "lex0r/okta-cache-aware-jwt-verifier",
+    "description": "An extension of Okta's JWT verifier library for caching JWKS during JWT verification",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alexandr Orosciuc",
+            "email": "alex.orosciuc@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Okta\\CacheAware\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^7.2",
+        "okta/jwt-verifier": "^1.0",
+        "symfony/cache": "^5.2"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^7.0 ",
+        "php-http/mock-client": "^1.4",
+        "guzzlehttp/psr7": "dev-master#be3bd52",
+        "firebase/php-jwt": "^5.2"
+    }
+}
